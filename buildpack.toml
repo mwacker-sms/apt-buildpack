@@ -1,10 +1,10 @@
 api = "0.10"
 
 [buildpack]
-id = "fagiani/apt"
+id = "mwacker-sms/apt"
 version = "0.2.6"
 name = "apt Packages Buildpack"
-homepage = "https://github.com/fagiani/apt-buildpack"
+homepage = "https://github.com/mwacker-sms/apt-buildpack"
 description = "Installs apt packages for further builds and runtime"
 keywords = ["apt", "packages", "ubuntu"]
 

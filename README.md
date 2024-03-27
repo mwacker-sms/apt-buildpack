@@ -1,10 +1,10 @@
 # apt Buildpack
 
-[![Version](https://img.shields.io/badge/dynamic/json?url=https://cnb-registry-api.herokuapp.com/api/v1/buildpacks/fagiani/apt&label=Version&query=$.latest.version)](https://github.com/fagiani/apt-buildpack)
+[![Version](https://img.shields.io/badge/dynamic/json?url=https://cnb-registry-api.herokuapp.com/api/v1/buildpacks/fagiani/apt&label=Version&query=$.latest.version)](https://github.com/mwacker-sms/apt-buildpack)
 
 This is a [Cloud Native Buildpack](https://buildpacks.io/) that adds support for `apt`-based dependencies during both build and runtime.
 
-This buildpack is based on the [heroku-buildpack-apt](https://github.com/heroku/heroku-buildpack-apt)
+This buildpack a fork of the sadly no more maintained [apt-buildpack from fagiani](https://github.com/fagiani/apt-buildpack) and is based on the [heroku-buildpack-apt](https://github.com/heroku/heroku-buildpack-apt)
 
 
 ## Usage
@@ -16,7 +16,7 @@ Include a list of `apt` package names to be installed in a file named `Aptfile`;
 The buildpack automatically downloads and installs the packages when you run a build:
 
 ```
-$ pack build --buildpack fagiani/apt myapp
+$ pack build --buildpack mwacker-sms/apt myapp
 ```
 
 #### Aptfile
